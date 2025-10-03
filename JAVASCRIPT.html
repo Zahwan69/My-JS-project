@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button class="H"
+        onclick="
+            displayPara('Heads') 
+        ">
+            Heads
+        </button>
+        <button class="T"
+        onclick="
+             displayPara('Tails') ">
+            Tails
+        </button>
+        <p class="paragraph">Choose</p>
+        <script>
+            console.log(document.querySelector('.H'));
+            
+            
+
+            function displayPara(choice){
+                let paragraph = document.querySelector('.paragraph');
+                if (choice === 'Heads') {
+                    paragraph.innerHTML = 'You chose: Heads';
+                } else {
+                    paragraph.innerHTML = 'You chose: Tails';
+                }
+                
+            }
+        </script>
+    </body>
+</html>

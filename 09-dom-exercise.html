@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM exercise</title>
+    </head>
+    <body>
+        <button>9a</button>
+        <button class="js-button">9b</button>
+
+        <button 
+            class="js-heads-button" 
+            onclick="choose('Heads')
+            "
+        >Heads</button>        
+        <button 
+            class="js-tails-button"
+            onclick="choose('Tails')
+            ">Tails</button>        
+        <p class="js-result"></p>
+
+        <input 
+            class="js-name"
+            placeholder="Name:"
+            onkeydown="handleEvent(event)">
+        <button 
+            class="js-submit-name-button" 
+            onclick="displayName()"
+            
+        >Submit</button>
+        <p class="js-name-display"></p>
+
+
+        <input 
+        class="js-keyupInput"
+        onkeyup="liveEvent(event)">
+        <p 
+        class="js-keyupParagraph"></p>
+        
+        <script>
+           
+           function liveEvent() {
+            const myText = document.querySelector('.js-keyupInput')
+            if (myText != null){
+                document.querySelector('.js-keyupParagraph')
+                .innerHTML = document.querySelector('.js-keyupInput').value;            }
+           }
+           
+           
+           
+            /*console.log(doucument.querySelector('button'));
+            
+            document.querySelector('.js-button')
+            .innerHTML = "9b done!"
+
+
+            function choose(choice) {
+                const yourChoice = document.querySelector(choice);
+                if (choice === 'Heads') {
+                    document.querySelector('.js-result')
+                    .innerHTML = 'You chose: Heads';
+                }else if (choice === 'Tails') {
+                    document.querySelector('.js-result')
+                    .innerHTML='You chose: Tails';
+                }
+                }
+            
+            function displayName(){
+                const name = document.querySelector('.js-name');
+                document.querySelector('.js-name-display').innerHTML = `Your name is : ${name.value}`;
+
+            }
+
+            function handleEvent (event) {
+                if (event.key === 'Enter') {
+                    displayName();
+                }
+ 
+            } */
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
